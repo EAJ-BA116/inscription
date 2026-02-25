@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EAJ BA 116 — BIA | Luxeuil-les-Bains</title>
+  <meta name="description" content="Escadrilles Air Jeunesse (EAJ) BA 116 – Luxeuil-les-Bains. Brevet d’Initiation Aéronautique (BIA). Découvrir. Apprendre. S’envoler." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header class="topbar" id="top">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Retour en haut">
+        <span class="brand__mark">EAJ</span>
+        <span class="brand__text">BA 116 • Luxeuil-les-Bains</span>
+      </a>
+
+      <button class="navbtn" id="navbtn" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#bia">BIA</a>
+        <a href="#activites">Activités</a>
+        <a href="#inscription">Inscription</a>
+        <a href="#galerie">Galerie</a>
+
+        <a href="https://devenir-aviateur.gouv.fr/se-former-avec-l-aae/escadrilles-air-jeunesse"
+           target="_blank" rel="noopener">
+          Découvrir les EAJ ↗
+        </a>
+
+        <a class="cta"
+           href="https://demarche.numerique.gouv.fr/commencer/formulaire-de-candidature-eaj-national-2026"
+           target="_blank" rel="noopener">
+          Candidater ↗
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <p class="kicker">Escadrilles Air Jeunesse (EAJ)</p>
+
+      <h1>
+        Brevet d’Initiation Aéronautique <span class="muted">(BIA)</span>
+      </h1>
+
+      <p class="lead">
+        <strong>Vivre ta passion de l’aviation</strong> :<br />
+        <span class="gold">Découvrir. Apprendre. S’envoler.</span>
+      </p>
+
+      <div class="hero__chips">
+        <span class="chip">Ouvert dès la classe de 3ème</span>
+        <span class="chip">BA 116 — Luxeuil-les-Bains</span>
+        <span class="chip">Air & Espace</span>
+      </div>
+
+      <div class="hero__actions">
+        <a class="btn primary"
+           href="https://demarche.numerique.gouv.fr/commencer/formulaire-de-candidature-eaj-national-2026"
+           target="_blank" rel="noopener">
+          Candidater ↗
+        </a>
+
+        <a class="btn ghost"
+           href="https://devenir-aviateur.gouv.fr/se-former-avec-l-aae/escadrilles-air-jeunesse"
+           target="_blank" rel="noopener">
+          Découvrir les EAJ ↗
+        </a>
+
+        <a class="btn ghost" href="#activites">Voir les activités</a>
+      </div>
+
+      <div class="hero__contact">
+        <span>Contact :</span>
+        <a href="mailto:eaj.ba116@gmail.com">eaj.ba116@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIA -->
+  <section class="section" id="bia">
+    <div class="container">
+      <div class="section__head">
+        <h2>Le BIA, c’est quoi ?</h2>
+        <p>
+          Le Brevet d’Initiation Aéronautique permet de découvrir le monde aéronautique et spatial,
+          au contact des aviateurs de la BA 116.
+        </p>
+      </div>
+
+      <div class="cards">
+        <div class="info-card">
+          <h3>Objectifs</h3>
+          <ul>
+            <li>Découvrir la culture aéronautique & l’espace</li>
+            <li>Découvrir les métiers de l’Armée de l’air et de l’espace</li>
+            <li>Préparer le BIA (EAJ 1ère année)</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3>Organisation</h3>
+          <ul>
+            <li>Mercredi après-midi (14h–17h)</li>
+            <li>EAJ 1 & 2 : 1 mercredi sur 2</li>
+            <li>EAJ 3 : 1 mercredi par mois</li>
+          </ul>
+          <p class="note">Hors vacances scolaires et hors exercice BA 116.</p>
+        </div>
+
+        <div class="info-card">
+          <h3>Format</h3>
+          <ul>
+            <li><strong>1h30</strong> préparation BIA (EAJ1)</li>
+            <li><strong>1h30</strong> activités : simulateur, drone, sport, visites…</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities flip cards -->
+  <section class="section section--dark" id="activites">
+    <div class="container">
+      <div class="section__head">
+        <h2>Nos activités</h2>
+        <p>Clique (ou touche) une carte pour voir une photo et une description ✨</p>
+      </div>
+
+      <div class="flipgrid">
+        <!-- BIA -->
+        <article class="flip-card" tabindex="0" data-flip aria-label="Carte préparation BIA">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <div class="badge">BIA</div>
+              <h3>Préparation au BIA</h3>
+              <p>Cours & culture aéronautique pour comprendre le vol et l’univers Air & Espace.</p>
+              <span class="hint">Clique pour retourner ➜</span>
+            </div>
+            <div class="flip-back">
+              <img src="assets/activities/bia.jpg" alt="Préparation BIA" loading="lazy">
+              <div class="back-text">
+                <h3>Préparation au BIA</h3>
+                <p>Aérodynamique, météo, navigation, sécurité… encadré par des aviateurs.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Drones -->
+        <article class="flip-card" tabindex="0" data-flip aria-label="Carte drones">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <div class="badge">TECH</div>
+              <h3>Drones</h3>
+              <p>Initiation au pilotage, exercices simples et règles de sécurité.</p>
+              <span class="hint">Clique pour retourner ➜</span>
+            </div>
+            <div class="flip-back">
+              <img src="assets/activities/drone.jpg" alt="Atelier drones" loading="lazy">
+              <div class="back-text">
+                <h3>Drones</h3>
+                <p>Prise en main, trajectoires, missions et sensibilisation réglementation / sécurité.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sport -->
+        <article class="flip-card" tabindex="0" data-flip aria-label="Carte activités sportives">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <div class="badge">COHÉSION</div>
+              <h3>Activités sportives</h3>
+              <p>Dépassement de soi, esprit d’équipe et cohésion.</p>
+              <span class="hint">Clique pour retourner ➜</span>
+            </div>
+            <div class="flip-back">
+              <img src="assets/activities/sport.jpg" alt="Activités sportives" loading="lazy">
+              <div class="back-text">
+                <h3>Activités sportives</h3>
+                <p>Endurance, parcours, sports collectifs : entraide, discipline et fair-play.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mémoire -->
+        <article class="flip-card" tabindex="0" data-flip aria-label="Carte devoir de mémoire">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <div class="badge">MÉMOIRE</div>
+              <h3>Devoir de mémoire</h3>
+              <p>Cérémonies et commémorations : histoire & engagement citoyen.</p>
+              <span class="hint">Clique pour retourner ➜</span>
+            </div>
+            <div class="flip-back">
+              <img src="assets/activities/memoire.jpg" alt="Cérémonie" loading="lazy">
+              <div class="back-text">
+                <h3>Devoir de mémoire</h3>
+                <p>Transmission des valeurs, respect, esprit de service et cohésion.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Visites -->
+        <article class="flip-card" tabindex="0" data-flip aria-label="Carte visites et métiers">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <div class="badge">MÉTIERS</div>
+              <h3>Visites & découvertes</h3>
+              <p>Unités, matériels, métiers : immersion sur base et sorties extérieures.</p>
+              <span class="hint">Clique pour retourner ➜</span>
+            </div>
+            <div class="flip-back">
+              <img src="assets/activities/visites.jpg" alt="Visites et découvertes" loading="lazy">
+              <div class="back-text">
+                <h3>Visites & découvertes</h3>
+                <p>Rencontres avec des aviateurs, découverte des parcours et métiers Air & Espace.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Valeurs -->
+        <article class="flip-card" tabindex="0" data-flip aria-label="Carte valeurs">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <div class="badge">VALEURS</div>
+              <h3>Esprit d’équipe</h3>
+              <p>Responsabilité, respect, leadership : grandir ensemble.</p>
+              <span class="hint">Clique pour retourner ➜</span>
+            </div>
+            <div class="flip-back">
+              <img src="assets/activities/valeurs.jpg" alt="Esprit d’équipe" loading="lazy">
+              <div class="back-text">
+                <h3>Esprit d’équipe</h3>
+                <p>Esprit d’équipe et valeurs de l’Armée de l’air <strong>et de l’espace</strong>.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inscription -->
+  <section class="section" id="inscription">
+    <div class="container">
+      <div class="section__head">
+        <h2>Inscription</h2>
+        <p>La candidature se fait via la plateforme officielle nationale.</p>
+      </div>
+
+      <div class="split">
+        <div class="panel">
+          <h3>Conditions</h3>
+          <ul>
+            <li>À partir de la classe de 3ème</li>
+            <li>Places limitées</li>
+            <li>Sélection par commission</li>
+          </ul>
+
+          <div class="callout">
+            <p style="margin:0 0 10px"><strong>👉 Formulaire officiel :</strong></p>
+            <a class="btn primary"
+               href="https://demarche.numerique.gouv.fr/commencer/formulaire-de-candidature-eaj-national-2026"
+               target="_blank" rel="noopener">
+              S’enregistrer / Candidater ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Besoin d’aide ?</h3>
+          <p style="margin:0 0 10px; opacity:.85">
+            Si tu as une question (organisation, activités, accès…), écris-nous :
+          </p>
+
+          <div class="callout">
+            <p style="margin:0 0 8px"><strong>Email :</strong></p>
+            <a class="mail" href="mailto:eaj.ba116@gmail.com">eaj.ba116@gmail.com</a>
+          </div>
+
+          <p class="note">
+            Pense à indiquer : nom, prénom, classe, établissement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section" id="galerie">
+    <div class="container">
+      <div class="section__head">
+        <h2>Galerie</h2>
+        <p>Quelques images des activités (clique pour agrandir).</p>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <button class="gitem" data-full="assets/gallery/01.jpg" aria-label="Ouvrir photo 1">
+          <img src="assets/gallery/01.jpg" alt="Photo activité 1" loading="lazy">
+        </button>
+        <button class="gitem" data-full="assets/gallery/02.jpg" aria-label="Ouvrir photo 2">
+          <img src="assets/gallery/02.jpg" alt="Photo activité 2" loading="lazy">
+        </button>
+        <button class="gitem" data-full="assets/gallery/03.jpg" aria-label="Ouvrir photo 3">
+          <img src="assets/gallery/03.jpg" alt="Photo activité 3" loading="lazy">
+        </button>
+        <button class="gitem" data-full="assets/gallery/04.jpg" aria-label="Ouvrir photo 4">
+          <img src="assets/gallery/04.jpg" alt="Photo activité 4" loading="lazy">
+        </button>
+        <button class="gitem" data-full="assets/gallery/05.jpg" aria-label="Ouvrir photo 5">
+          <img src="assets/gallery/05.jpg" alt="Photo activité 5" loading="lazy">
+        </button>
+        <button class="gitem" data-full="assets/gallery/06.jpg" aria-label="Ouvrir photo 6">
+          <img src="assets/gallery/06.jpg" alt="Photo activité 6" loading="lazy">
+        </button>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Fermer">✕</button>
+      <img id="lightboxImg" alt="Photo agrandie">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--dark" id="contact">
+    <div class="container">
+      <div class="section__head">
+        <h2>Plus d’infos</h2>
+        <p>Scanne le QR code ou utilise les liens officiels 👇</p>
+      </div>
+
+      <div class="contact">
+        <div class="contact__box">
+          <h3>Contact</h3>
+
+          <p class="contact__line">
+            <span class="label">Email :</span>
+            <a href="mailto:eaj.ba116@gmail.com">eaj.ba116@gmail.com</a>
+          </p>
+
+          <div class="links">
+            <a class="linkbtn"
+               href="https://devenir-aviateur.gouv.fr/se-former-avec-l-aae/escadrilles-air-jeunesse"
+               target="_blank" rel="noopener">Découvrir les EAJ ↗</a>
+
+            <a class="linkbtn"
+               href="https://demarche.numerique.gouv.fr/commencer/formulaire-de-candidature-eaj-national-2026"
+               target="_blank" rel="noopener">S’enregistrer / Candidater ↗</a>
+          </div>
+
+          <p class="contact__small">
+            Pour une question, précise : nom, prénom, classe, établissement.
+          </p>
+        </div>
+
+        <div class="contact__qr">
+          <img src="assets/qr.png" alt="QR code informations" loading="lazy">
+          <p class="contact__small">QR code → informations / inscription</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>© EAJ BA 116 — Luxeuil-les-Bains</p>
+      </footer>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
