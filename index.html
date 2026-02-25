@@ -3,18 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EAJ BA 116 — BIA | Luxeuil-les-Bains</title>
+  <title>>EAJ BA 116 — BIA | Luxeuil-les-Bains</title>
   <meta name="description" content="Escadrilles Air Jeunesse (EAJ) BA 116 – Luxeuil-les-Bains. Brevet d’Initiation Aéronautique (BIA). Découvrir. Apprendre. S’envoler." />
+
+  <!-- Favicon / icons -->
+  <link rel="icon" href="assets/eaj.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/eaj.png">
+  <link rel="apple-touch-icon" href="assets/eaj.png">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Top bar -->
+  <!-- Topbar -->
   <header class="topbar" id="top">
     <div class="container topbar__inner">
       <a class="brand" href="#top" aria-label="Retour en haut">
-        <span class="brand__mark">EAJ</span>
-        <span class="brand__text">BA 116 • Luxeuil-les-Bains</span>
+        <div class="brand__logos" aria-hidden="true">
+          <img class="brand__logo" src="assets/eaj.png" alt="">
+          <img class="brand__logo brand__logo--base" src="assets/ba116.png" alt="">
+        </div>
+        
+          <span class="brand__title">Escadrilles Air Jeunesse</span>
+          <span class="brand__text">BA 116 • Luxeuil-les-Bains</span>
+        </div>
       </a>
 
       <button class="navbtn" id="navbtn" aria-label="Ouvrir le menu" aria-expanded="false">
@@ -44,12 +56,10 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero__bg" aria-hidden="true"></div>
-    <div class="container hero__inner">
-      <p class="kicker">Escadrilles Air Jeunesse (EAJ)</p>
 
-      <h1>
-        Brevet d’Initiation Aéronautique <span class="muted">(BIA)</span>
-      </h1>
+    <div class="container hero__inner">
+      <h1>Escadrilles Air Jeunesse (EAJ) • BA 116</h1>
+
 
       <p class="lead">
         <strong>Vivre ta passion de l’aviation</strong> :<br />
@@ -58,7 +68,7 @@
 
       <div class="hero__chips">
         <span class="chip">Ouvert dès la classe de 3ème</span>
-        <span class="chip">BA 116 — Luxeuil-les-Bains</span>
+        <span class="chip">Mercredi après-midi</span>
         <span class="chip">Air & Espace</span>
       </div>
 
@@ -66,7 +76,7 @@
         <a class="btn primary"
            href="https://demarche.numerique.gouv.fr/commencer/formulaire-de-candidature-eaj-national-2026"
            target="_blank" rel="noopener">
-          Candidater ↗
+          S’enregistrer / Candidater ↗
         </a>
 
         <a class="btn ghost"
@@ -86,57 +96,157 @@
   </section>
 
   <!-- BIA -->
-  <section class="section" id="bia">
-    <div class="container">
-      <div class="section__head">
-        <h2>Le BIA, c’est quoi ?</h2>
-        <p>
-          Le Brevet d’Initiation Aéronautique permet de découvrir le monde aéronautique et spatial,
-          au contact des aviateurs de la BA 116.
-        </p>
+ <section class="section" id="bia">
+  <div class="container">
+    <div class="section__head">
+      <h2>BIA : une étape des EAJ (1ère année)</h2>
+      <p>
+        Le <strong>Brevet d’Initiation Aéronautique (BIA)</strong> est un <strong>diplôme</strong>
+        délivré par le <strong>ministère de l’Éducation nationale</strong>.
+        Il permet de découvrir le monde <strong>aéronautique</strong> et <strong>spatial</strong>.
+      </p>
+      <p class="mutep">
+        Au sein des <strong>Escadrilles Air Jeunesse</strong>, le BIA concerne les <strong>équipiers de 1ère année</strong>.
+        Les cours sont dispensés par des <strong>pilotes</strong> et <strong>mécaniciens</strong> de la <strong>BA 116</strong>.
+      </p>
+    </div>
+
+    <div class="cards">
+      <div class="info-card">
+        <h3>📚 Cours BIA</h3>
+        <ul>
+          <li><strong>Tous les mercredis</strong> (hors vacances scolaires)</li>
+          <li>Découverte de l’aéronautique et du spatial</li>
+          <li>Encadrement : pilotes & mécaniciens BA 116</li>
+        </ul>
       </div>
 
-      <div class="cards">
-        <div class="info-card">
-          <h3>Objectifs</h3>
-          <ul>
-            <li>Découvrir la culture aéronautique & l’espace</li>
-            <li>Découvrir les métiers de l’Armée de l’air et de l’espace</li>
-            <li>Préparer le BIA (EAJ 1ère année)</li>
-          </ul>
-        </div>
+      <div class="info-card">
+        <h3>🗓️ Rythme</h3>
+        <ul>
+          <li>Chaque mercredi : <strong>cours BIA</strong></li>
+          <li><strong>1 mercredi sur 2</strong> : activités en plus</li>
+          <li>Horaires : à préciser (ex : 14h–17h)</li>
+        </ul>
+        <p class="note">Hors vacances scolaires.</p>
+      </div>
 
-        <div class="info-card">
-          <h3>Organisation</h3>
-          <ul>
-            <li>Mercredi après-midi (14h–17h)</li>
-            <li>EAJ 1 & 2 : 1 mercredi sur 2</li>
-            <li>EAJ 3 : 1 mercredi par mois</li>
-          </ul>
-          <p class="note">Hors vacances scolaires et hors exercice BA 116.</p>
-        </div>
-
-        <div class="info-card">
-          <h3>Format</h3>
-          <ul>
-            <li><strong>1h30</strong> préparation BIA (EAJ1)</li>
-            <li><strong>1h30</strong> activités : simulateur, drone, sport, visites…</li>
-          </ul>
-        </div>
+      <div class="info-card">
+        <h3>🛩️ Activités complémentaires</h3>
+        <ul>
+          <li>Visites : unités de la base & musée</li>
+          <li>Activités sportives & cohésion</li>
+          <li>Aéromodélisme</li>
+          <li>Drones</li>
+        </ul>
       </div>
     </div>
-  </section>
+    <div class="bia-perk">
+  <div class="bia-perk__text">
+    <h3>✈️ Après réussite du BIA</h3>
+    <p>
+      La réussite du <strong>BIA</strong> permet d’effectuer un <strong>vol sur avion civile</strong>
+      dans un <strong>aérodrome civil.</strong> 
+    </p>
+    <p class="note">Objectif : concrétiser l’apprentissage et vivre une expérience aéronautique inoubliable.</p>
+  </div>
 
-  <!-- Activities flip cards -->
+  <div class="bia-perk__media">
+    <img src="assets/bia_vol.jpg" alt="Vol sur avion en aérodrome civil" loading="lazy">
+  </div>
+</div>
+  </div>
+</section>
+<section class="section" id="parcours">
+  <div class="container">
+    <div class="section__head">
+      <h2>Parcours EAJ : 3 années pour progresser</h2>
+      <p>
+        Les Escadrilles Air Jeunesse se vivent sur <strong>3 années</strong>.
+        Le <strong>BIA</strong> fait partie de la <strong>1ère année</strong>, puis l’aventure continue avec des activités,
+        des projets et des temps forts tout au long du parcours.
+      </p>
+    </div>
+
+    <div class="timeline">
+      <div class="step">
+        <div class="step__top">
+          <span class="step__tag">EAJ 1</span>
+          <h3>BIA + découverte</h3>
+        </div>
+        <p>Cours BIA, premières immersions, activités de cohésion et découverte des métiers.</p>
+      </div>
+
+      <div class="step">
+        <div class="step__top">
+          <span class="step__tag">EAJ 2</span>
+          <h3>Approfondissement</h3>
+        </div>
+        <p>Activités plus variées, projets, visites et montée en autonomie.</p>
+      </div>
+
+      <div class="step">
+        <div class="step__top">
+          <span class="step__tag">EAJ 3</span>
+          <h3>Engagement & projets</h3>
+        </div>
+        <p>Projets collectifs, temps forts, responsabilités, esprit d’équipe et valeurs Air & Espace.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section--dark" id="deplacements">
+  <div class="container">
+    <div class="section__head">
+      <h2>Déplacements & temps forts</h2>
+      <p>
+        Selon les opportunités et l’organisation, les EAJ peuvent participer à des sorties,
+        rencontres et cérémonies tout au long de l’année.
+      </p>
+    </div>
+
+    <div class="highlights">
+      <div class="highlight">
+        <h3>🧭 Déplacements</h3>
+        <ul>
+          <li>Salon du Bourget</li>
+          <li>Meetings aériens</li>
+          <li>Visites de musées & sites aéronautiques</li>
+          <li>Découvertes d’aérodromes civils</li>
+        </ul>
+      </div>
+
+      <div class="highlight">
+        <h3>🤝 Rencontres inter-EAJ</h3>
+        <ul>
+          <li>Rencontres inter EAJ (toutes les EAJ de France)</li>
+          <li>Challenges / activités communes</li>
+          <li>Échanges et esprit de cohésion national</li>
+        </ul>
+      </div>
+
+      <div class="highlight">
+        <h3>🎖️ Cérémonies militaires</h3>
+        <ul>
+          <li>8 mai</li>
+          <li>14 juillet</li>
+          <li>11 novembre</li>
+          <li>Et autres cérémonies selon le calendrier</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Activités (flip cards) -->
   <section class="section section--dark" id="activites">
     <div class="container">
       <div class="section__head">
         <h2>Nos activités</h2>
-        <p>Clique (ou touche) une carte pour voir une photo et une description ✨</p>
+        <p>Clique (ou touche) une carte pour la retourner et voir une photo + description ✨</p>
       </div>
 
       <div class="flipgrid">
-        <!-- BIA -->
         <article class="flip-card" tabindex="0" data-flip aria-label="Carte préparation BIA">
           <div class="flip-inner">
             <div class="flip-front">
@@ -146,7 +256,7 @@
               <span class="hint">Clique pour retourner ➜</span>
             </div>
             <div class="flip-back">
-              <img src="assets/activities/bia.jpg" alt="Préparation BIA" loading="lazy">
+              <img src="assets/activities/bia.jpeg" alt="Préparation BIA" loading="lazy">
               <div class="back-text">
                 <h3>Préparation au BIA</h3>
                 <p>Aérodynamique, météo, navigation, sécurité… encadré par des aviateurs.</p>
@@ -155,7 +265,6 @@
           </div>
         </article>
 
-        <!-- Drones -->
         <article class="flip-card" tabindex="0" data-flip aria-label="Carte drones">
           <div class="flip-inner">
             <div class="flip-front">
@@ -174,7 +283,6 @@
           </div>
         </article>
 
-        <!-- Sport -->
         <article class="flip-card" tabindex="0" data-flip aria-label="Carte activités sportives">
           <div class="flip-inner">
             <div class="flip-front">
@@ -184,7 +292,7 @@
               <span class="hint">Clique pour retourner ➜</span>
             </div>
             <div class="flip-back">
-              <img src="assets/activities/sport.jpg" alt="Activités sportives" loading="lazy">
+              <img src="assets/activities/sport.jpeg" alt="Activités sportives" loading="lazy">
               <div class="back-text">
                 <h3>Activités sportives</h3>
                 <p>Endurance, parcours, sports collectifs : entraide, discipline et fair-play.</p>
@@ -193,7 +301,6 @@
           </div>
         </article>
 
-        <!-- Mémoire -->
         <article class="flip-card" tabindex="0" data-flip aria-label="Carte devoir de mémoire">
           <div class="flip-inner">
             <div class="flip-front">
@@ -212,8 +319,7 @@
           </div>
         </article>
 
-        <!-- Visites -->
-        <article class="flip-card" tabindex="0" data-flip aria-label="Carte visites et métiers">
+        <article class="flip-card" tabindex="0" data-flip aria-label="Carte visites">
           <div class="flip-inner">
             <div class="flip-front">
               <div class="badge">MÉTIERS</div>
@@ -222,7 +328,7 @@
               <span class="hint">Clique pour retourner ➜</span>
             </div>
             <div class="flip-back">
-              <img src="assets/activities/visites.jpg" alt="Visites et découvertes" loading="lazy">
+              <img src="assets/activities/visites.jpeg" alt="Visites et découvertes" loading="lazy">
               <div class="back-text">
                 <h3>Visites & découvertes</h3>
                 <p>Rencontres avec des aviateurs, découverte des parcours et métiers Air & Espace.</p>
@@ -231,7 +337,6 @@
           </div>
         </article>
 
-        <!-- Valeurs -->
         <article class="flip-card" tabindex="0" data-flip aria-label="Carte valeurs">
           <div class="flip-inner">
             <div class="flip-front">
@@ -249,16 +354,73 @@
             </div>
           </div>
         </article>
+
       </div>
     </div>
   </section>
+  <section class="section" id="projets">
+  <div class="container">
+    <div class="section__head">
+      <h2>Projets</h2>
+      <p>Découvre quelques projets et initiatives portés par les EAJ.</p>
+    </div>
+   <div class="projects">
+      <!-- Projet 1 -->
+      <a class="project-card"
+         href="https://eaj-ba116.github.io/HenriFertet2025/"
+         target="_blank" rel="noopener">
+        <div class="project-img">
+          <img src="assets/projects/projet-1.jpg" alt="Plaque Henri Fertet" loading="lazy">
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <span class="project-tag">OFFICIEL</span>
+          </div>
+          <h3>Hommage à Henri Fertet</h3>
+          <p>Création d'une plaque et d'unsite commémorative en l'hommage d'Henri Fertet , compagnon de la libération, mort à 16 ans pour la France</p>
+          <span class="project-link">Ouvrir ↗</span>
+        </div>
+      </a>
+
+        <!-- Projet 2 -->
+      <a class="project-card"
+         href="https://eaj-ba116.github.io/operationsagittaire/"
+         target="_blank" rel="noopener">
+        <div class="project-img">
+          <img src="assets/projects/projet-2.jpg" alt="Maquette a400M" loading="lazy">
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <span class="project-tag">Opération Sagittaire</span>
+          </div>
+          <h3>Formulaire national</h3>
+          <p>Création d'une maquette d'un A400M en impression 3D, d'une vidéo, d'un site internet et d'un journal pour les 80 ans du Trasport Aérien Militaire</p>
+          <span class="project-link">Ouvrir ↗</span>
+        </div>
+      
+       <!-- Projet 3 -->
+      <a class="project-card" >
+        <div class="project-img">
+          <img src="assets/projects/projet-3.jpeg" alt="cérémonie Mignovillard" loading="lazy">
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <span class="project-tag">Commemoration Annuelle du crash de Mignovillard</span>
+          </div>
+          <h3>Hommage au Commandant Baptitste CHIRIÉ et à la Capitaine Audrey MICHELON</h3>
+          <p>Tous les 9 janvier, jour de l'anniversaire de ce tragique accident, les EAJ participent à la céremonie en hommage à l'équipage du Mirage 2000 D. </p>
+                  </div>
+      </a>
+    </div>
+  </div>
+</section>
 
   <!-- Inscription -->
   <section class="section" id="inscription">
     <div class="container">
       <div class="section__head">
         <h2>Inscription</h2>
-        <p>La candidature se fait via la plateforme officielle nationale.</p>
+        <p>La candidature se fait via la plateforme officielle nationale : Démarche numérique</p>
       </div>
 
       <div class="split">
@@ -271,7 +433,7 @@
           </ul>
 
           <div class="callout">
-            <p style="margin:0 0 10px"><strong>👉 Formulaire officiel :</strong></p>
+            <p class="callout__title"><strong>👉 Formulaire officiel :</strong></p>
             <a class="btn primary"
                href="https://demarche.numerique.gouv.fr/commencer/formulaire-de-candidature-eaj-national-2026"
                target="_blank" rel="noopener">
@@ -282,12 +444,12 @@
 
         <div class="panel">
           <h3>Besoin d’aide ?</h3>
-          <p style="margin:0 0 10px; opacity:.85">
-            Si tu as une question (organisation, activités, accès…), écris-nous :
+          <p class="mutep">
+            Pour une question (organisation, activités…), écris-nous :
           </p>
 
           <div class="callout">
-            <p style="margin:0 0 8px"><strong>Email :</strong></p>
+            <p class="callout__title"><strong>Email :</strong></p>
             <a class="mail" href="mailto:eaj.ba116@gmail.com">eaj.ba116@gmail.com</a>
           </div>
 
@@ -299,7 +461,9 @@
     </div>
   </section>
 
-  <!-- Gallery -->
+   
+
+  <!-- Galerie -->
   <section class="section" id="galerie">
     <div class="container">
       <div class="section__head">
@@ -335,12 +499,16 @@
     </div>
   </section>
 
+
+
+   
+
   <!-- Contact -->
   <section class="section section--dark" id="contact">
     <div class="container">
       <div class="section__head">
         <h2>Plus d’infos</h2>
-        <p>Scanne le QR code ou utilise les liens officiels 👇</p>
+        
       </div>
 
       <div class="contact">
@@ -367,13 +535,12 @@
           </p>
         </div>
 
-        <div class="contact__qr">
-          <img src="assets/qr.png" alt="QR code informations" loading="lazy">
-          <p class="contact__small">QR code → informations / inscription</p>
-        </div>
-      </div>
-
+        
       <footer class="footer">
+        <div class="footer-logos" aria-hidden="true">
+          <img src="assets/eaj.png" alt="">
+          <img src="assets/ba116.png" alt="">
+        </div>
         <p>© EAJ BA 116 — Luxeuil-les-Bains</p>
       </footer>
     </div>

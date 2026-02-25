@@ -42,6 +42,7 @@ const openLightbox = (src) => {
   lightbox.classList.add("is-open");
   lightbox.setAttribute("aria-hidden", "false");
 };
+
 const closeLightbox = () => {
   lightbox.classList.remove("is-open");
   lightbox.setAttribute("aria-hidden", "true");
@@ -56,6 +57,7 @@ lightboxClose?.addEventListener("click", closeLightbox);
 lightbox?.addEventListener("click", (e) => {
   if (e.target === lightbox) closeLightbox();
 });
+
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && lightbox.classList.contains("is-open")) closeLightbox();
 });
