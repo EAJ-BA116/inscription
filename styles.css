@@ -236,22 +236,29 @@ h1{
 .flip-back{
   transform: rotateY(180deg);
   background: #0b1224;
-  display:grid;
-  grid-template-rows: 1fr auto;
+  display: grid;
+  grid-template-rows: 60% 40%;
 }
+
 .flip-back img{
-  width:100%; height:100%;
+  width: 100%;
+  height: 100%;
+  min-height: 0;              /* IMPORTANT */
   object-fit: cover;
+  display: block;
 }
+
 .back-text{
   padding: 14px 16px;
   background: linear-gradient(180deg, rgba(11,18,36,.0), rgba(11,18,36,.92));
 }
-.back-text h3{margin:0 0 6px; font-size: 18px}
-.back-text p{margin:0; opacity:.9; font-size: 14.5px}
 
-.flip-card:focus-visible .flip-front{
-  box-shadow: 0 0 0 3px rgba(215,181,109,.35), var(--shadow);
+.back-text h3{ margin:0 0 6px; font-size: 18px }
+.back-text p{
+  overflow: hidden;
+  display: -webkit-box;
+ 
+  -webkit-box-orient: vertical;
 }
 
 /* Split panels */
