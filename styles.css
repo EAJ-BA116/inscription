@@ -104,7 +104,7 @@ a{color:inherit}
   position:absolute; inset:0;
   background:
     linear-gradient(180deg, rgba(7,11,20,.86), rgba(7,11,20,.42) 40%, rgba(7,11,20,.92)),
-    url("assets/hero.png") center/cover no-repeat;
+    url("assets/hero.jpeg") center/cover no-repeat;
   transform: scale(1.02);
 }
 .hero__inner{position:relative; padding: 86px 0 64px}
