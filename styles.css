@@ -139,10 +139,26 @@ h1{
   border:1px solid rgba(255,255,255,.18);
   background: rgba(255,255,255,.08);
   box-shadow: var(--shadow);
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+.btn:hover,
+.btn:focus-visible{
+  transform: translateY(-2px);
+  background: rgba(255,255,255,.12);
+  border-color: rgba(255,255,255,.28);
+}
+.btn:focus-visible{
+  outline: 2px solid rgba(215,181,109,.55);
+  outline-offset: 2px;
 }
 .btn.primary{
   background: rgba(215,181,109,.18);
   border-color: rgba(215,181,109,.35);
+}
+.btn.primary:hover,
+.btn.primary:focus-visible{
+  background: rgba(215,181,109,.24);
+  border-color: rgba(215,181,109,.5);
 }
 .btn.ghost{ background: rgba(255,255,255,.06); }
 .hero__contact{margin-top:18px; opacity:.92}
@@ -610,4 +626,334 @@ h1{
   margin: 0;
   padding-left: 18px;
   color: var(--muted);
+}
+/* Inscription / tarifs / formulaire */
+.fees-grid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+  margin: 0 0 18px;
+}
+
+.fee-card{
+  grid-column: span 12;
+  background: rgba(255,255,255,.05);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+@media(min-width: 900px){
+  .fee-card{grid-column: span 4;}
+}
+
+.fee-card h3{margin:0 0 8px;}
+.fee-price{margin:0 0 8px; font-size: 18px;}
+.split--inscription{align-items:start;}
+
+.inscription-form{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+}
+
+.field{
+  grid-column: span 12;
+  display:flex;
+  flex-direction:column;
+  gap: 8px;
+}
+
+@media(min-width: 760px){
+  .field{grid-column: span 6;}
+  .field--wide{grid-column: span 12;}
+}
+
+.field span{
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.field input,
+.field select{
+  width:100%;
+  min-height: 48px;
+  border-radius: 14px;
+  border:1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.06);
+  color: var(--text);
+  padding: 12px 14px;
+  font: inherit;
+}
+
+.field input::file-selector-button{
+  border:none;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-right: 10px;
+  cursor:pointer;
+}
+
+.field select option{
+  color:#0b1224;
+  background:#ffffff;
+}
+
+.field select:focus{
+  outline:2px solid rgba(215,181,109,.45);
+  outline-offset: 2px;
+}
+
+.callout--documents{
+  margin-top: 0;
+}
+
+.checks{
+  display:flex;
+  flex-direction:column;
+  gap: 12px;
+}
+
+.check{
+  display:flex;
+  align-items:flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius: 14px;
+  background: rgba(255,255,255,.04);
+}
+
+.check input{
+  margin-top: 3px;
+  transform: scale(1.1);
+}
+
+.form-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 12px;
+}
+
+.form-alert{
+  min-height: 24px;
+  padding: 0;
+  font-weight: 600;
+}
+
+.form-alert.error,
+.form-alert.success,
+.form-alert.info{
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+}
+
+.form-alert.error{
+  background: rgba(255, 93, 93, .12);
+  border-color: rgba(255, 93, 93, .35);
+}
+
+.form-alert.success{
+  background: rgba(93, 214, 141, .12);
+  border-color: rgba(93, 214, 141, .35);
+}
+
+.hidden{display:none;}
+
+.panel--requirements ul{
+  margin: 0 0 16px;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.steps-required{
+  display:grid;
+  gap:12px;
+  margin: 16px 0 18px;
+}
+
+.required-step{
+  display:grid;
+  grid-template-columns: 44px 1fr;
+  gap: 12px;
+  align-items:flex-start;
+  padding: 14px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius: 16px;
+  background: rgba(255,255,255,.04);
+}
+
+.required-step__num{
+  width: 44px;
+  height: 44px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 999px;
+  font-weight: 800;
+  color: #0b1224;
+  background: var(--gold);
+}
+
+.required-step h4{
+  margin: 2px 0 6px;
+  font-size: 16px;
+}
+
+.required-step p{
+  margin:0;
+  opacity:.9;
+}
+
+.toggle-form-btn{
+  width:100%;
+  margin-top: 8px;
+}
+
+.form-wrapper{
+  margin-top: 16px;
+}
+
+.form-wrapper.hidden{
+  display:none;
+}
+
+.form-actions .btn{
+  width:100%;
+}
+
+.form-actions .btn.primary{
+  min-height: 52px;
+  font-weight: 800;
+}
+
+.callout--documents{
+  border-color: rgba(215,181,109,.35);
+  background: rgba(215,181,109,.1);
+}
+
+@media(max-width: 759px){
+  .panel{
+    padding: 14px;
+  }
+
+  .fee-card{
+    padding: 16px;
+  }
+
+  .field input,
+  .field select{
+    min-height: 50px;
+    font-size: 16px;
+  }
+
+  .check{
+    padding: 14px;
+  }
+
+  .required-step{
+    grid-template-columns: 40px 1fr;
+    padding: 12px;
+  }
+
+  .required-step__num{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+.btn--action{
+  width:100%;
+  min-height: 54px;
+  font-weight: 800;
+  letter-spacing: .01em;
+}
+
+.btn--secondary{
+  background: rgba(255,255,255,.06);
+  border-color: rgba(255,255,255,.18);
+}
+
+.btn[title]{
+  cursor: pointer;
+}
+
+.callout .btn--action{
+  margin-top: 8px;
+}
+
+
+/* Accessibility utility */
+.sr-only{
+  position:absolute !important;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+
+/* Unified button system */
+.btn,
+.nav .cta,
+.toggle-form-btn,
+.form-actions .btn,
+.callout .btn--action{
+  background: linear-gradient(180deg, rgba(215,181,109,.22), rgba(215,181,109,.14));
+  border-color: rgba(215,181,109,.42);
+  color: var(--text);
+}
+
+.btn:hover,
+.btn:focus-visible,
+.nav .cta:hover,
+.nav .cta:focus-visible,
+.toggle-form-btn:hover,
+.toggle-form-btn:focus-visible,
+.form-actions .btn:hover,
+.form-actions .btn:focus-visible,
+.callout .btn--action:hover,
+.callout .btn--action:focus-visible{
+  background: linear-gradient(180deg, rgba(215,181,109,.30), rgba(215,181,109,.18));
+  border-color: rgba(215,181,109,.58);
+  box-shadow: 0 16px 34px rgba(0,0,0,.32);
+}
+
+.btn.primary,
+.btn.ghost,
+.btn--secondary,
+.nav a.cta{
+  background: linear-gradient(180deg, rgba(215,181,109,.22), rgba(215,181,109,.14));
+  border-color: rgba(215,181,109,.42);
+}
+
+.hero__actions .btn,
+.callout .btn,
+.toggle-form-btn,
+.form-actions .btn{
+  min-height: 54px;
+  font-weight: 800;
+}
+
+/* Toast notification */
+
+@media(max-width: 759px){
+  .logic-toast{
+    right: 12px;
+    left: 12px;
+    width: auto;
+    bottom: 12px;
+  }
 }

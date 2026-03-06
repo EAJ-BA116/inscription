@@ -420,43 +420,145 @@
     <div class="container">
       <div class="section__head">
         <h2>Inscription</h2>
-        <p>La candidature se fait via la plateforme officielle nationale : Démarche numérique</p>
-          <p>Les inscriptions doivent être effectuées avant le 15 juin 2026. Une commission est alors effectuées.</p>
+        <p>La candidature se fait via la plateforme officielle nationale : Démarche numérique.</p>
+        <p>Les inscriptions doivent être effectuées avant le 15 juin 2026. Une commission de sélection est ensuite réalisée.</p>
       </div>
 
-      <div class="split">
-        <div class="panel">
-          <h3>Conditions</h3>
+      <div class="fees-grid">
+        <article class="fee-card">
+          <h3>💶 Combien ça coûte ?</h3>
+          <p class="fee-price">Cotisation CSA (licence) : <strong>75 €</strong></p>
+          <p class="mutep">Paiement possible par <strong>virement</strong> ou via <strong>Pass'Sport</strong>.</p>
+        </article>
+
+        <article class="fee-card">
+          <h3>🧥 Prêt des tenues de vol</h3>
+          <p class="fee-price">Chèque de caution : <strong>300 €</strong></p>
+          <p class="mutep">Demandé pour le prêt des tenues de vol.</p>
+        </article>
+
+        <article class="fee-card">
+          <h3>📄 Pièces demandées</h3>
+          <p class="mutep">Pour l'inscription, nous demandons également les <strong>bulletins scolaires de l'année en cours</strong>.</p>
+        </article>
+      </div>
+
+      <div class="split split--inscription">
+        <div class="panel panel--requirements">
+          <h3>Conditions & démarches obligatoires</h3>
           <ul>
-            <li>À partir de la classe de 3ème</li>
+            <li>À partir de la classe de <strong>3ème à la rentrée 2026</strong></li>
             <li>Places limitées</li>
             <li>Sélection par commission</li>
+            <li><strong>Les 2 démarches ci-dessous sont obligatoires</strong></li>
           </ul>
 
+          <div class="steps-required">
+            <div class="required-step">
+              <span class="required-step__num">1</span>
+              <div>
+                <h4>Inscription sur Démarche numérique</h4>
+                <p>Le jeune doit compléter la candidature officielle sur Démarche numérique et y déposer <strong>son CV</strong> ainsi qu’une <strong>lettre de motivation</strong>.</p>
+              </div>
+            </div>
+
+            <div class="required-step">
+              <span class="required-step__num">2</span>
+              <div>
+                <h4>Envoi du formulaire + bulletins scolaires</h4>
+                <p>Le jeune doit aussi compléter le formulaire ci-dessous puis envoyer ses <strong>bulletins scolaires de l’année en cours</strong> avec le message préparé.</p>
+              </div>
+            </div>
+          </div>
+
           <div class="callout">
-            <p class="callout__title"><strong>👉 Formulaire officiel :</strong></p>
-            <a class="btn primary"
+            <p class="callout__title"><strong>👉 Étape 1 : Démarche numérique</strong></p>
+            <a class="btn primary btn--action"
                href="https://demarche.numerique.gouv.fr/commencer/formulaire-de-candidature-eaj-national-2026"
-               target="_blank" rel="noopener">
-              S’enregistrer / Candidater ↗
+               target="_blank" rel="noopener"
+               title="Ouvrir le formulaire officiel sur Démarche numérique">
+              Étape 1 : Démarche numérique ↗
             </a>
+            <p class="note">CV et lettre de motivation doivent être ajoutés sur Démarche numérique.</p>
           </div>
         </div>
 
         <div class="panel">
-          <h3>Besoin d’aide ?</h3>
-          <p class="mutep">
-            Pour une question (organisation, activités…), écris-nous :
-          </p>
+          <h3>Étape 2 : envoi du formulaire</h3>
+          <p class="mutep">Le formulaire ci-dessous sert à préparer l’envoi par <strong>email</strong>. Le formulaire peut être envoyé même si cette case n’est pas cochée. La démarche officielle reste cependant obligatoire.</p>
 
-          <div class="callout">
-            <p class="callout__title"><strong>Email :</strong></p>
-            <a class="mail" href="mailto:eaj.ba116@gmail.com">eaj.ba116@gmail.com</a>
+          <button type="button" class="btn btn--action primary toggle-form-btn" id="toggleFormBtn" aria-expanded="false" aria-controls="formWrapper" title="Afficher ou masquer le formulaire d'envoi des bulletins scolaires">
+            Étape 2 : Envoi du formulaire
+          </button>
+
+          <div class="form-wrapper hidden" id="formWrapper">
+            <form id="inscriptionForm" class="inscription-form">
+              <div class="form-grid">
+                <label class="field">
+                  <span>Nom</span>
+                  <input type="text" id="nom" name="nom" required placeholder="Dupond">
+                </label>
+
+                <label class="field">
+                  <span>Prénom</span>
+                  <input type="text" id="prenom" name="prenom" required placeholder="Florian">
+                </label>
+
+                <label class="field">
+                  <span>Date de naissance</span>
+                  <input type="date" id="dateNaissance" name="dateNaissance" required>
+                </label>
+
+                <label class="field">
+                  <span>Classe à la rentrée 2026</span>
+                  <select id="classe" name="classe" required>
+                    <option value="">Choisir…</option>
+                    <option>3ème</option>
+                    <option>Seconde</option>
+                    <option>Première</option>
+                    <option>Terminale</option>
+                    <option value="Autre">Autre</option>
+                  </select>
+                </label>
+
+                <label class="field field--wide hidden" id="autreClasseField">
+                  <span>Justifier la classe « autre »</span>
+                  <input type="text" id="autreClasse" name="autreClasse" placeholder="Ex : CAP 1re année">
+                </label>
+
+                <label class="field field--wide">
+                  <span>Établissement scolaire à la rentrée 2026</span>
+                  <input type="text" id="etablissement" name="etablissement" required placeholder="Collège / Lycée …">
+                </label>
+
+              </div>
+
+              <div class="checks">
+                <label class="check">
+                  <input type="checkbox" id="bia" name="bia">
+                  <span>J'ai déjà le BIA</span>
+                </label>
+
+                <label class="check">
+                  <input type="checkbox" id="demarches" name="demarches">
+                  <span>J'ai déjà effectué l'inscription sur Démarche numérique</span>
+                </label>
+              </div>
+
+              <div class="callout callout--documents">
+                <p class="callout__title"><strong>📎 Rappel important</strong></p>
+                <p class="mutep"><strong>Les bulletins scolaires de l’année en cours doivent être envoyés avec le formulaire.</strong></p>
+                <p class="mutep"><strong>Le CV et la lettre de motivation doivent être déposés sur Démarche numérique.</strong></p>
+                
+              </div>
+
+              <div class="form-alert sr-only" id="formAlert" aria-live="polite"></div>
+
+              <div class="form-actions">
+                <button type="button" class="btn btn--action primary" id="sendCombinedBtn" title="Ouvrir l’email avec les informations du formulaire">Envoyer le formulaire par email</button>
+              </div>
+            </form>
           </div>
-
-          <p class="note">
-            Pense à indiquer : nom, prénom, classe, établissement.
-          </p>
         </div>
       </div>
     </div>
